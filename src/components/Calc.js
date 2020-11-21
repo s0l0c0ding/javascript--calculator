@@ -25,7 +25,7 @@ class Calc extends React.Component {
         <Button shape="circle" id="seven" onClick={() => this.props.insertAction(7)}>7</Button>
         <Button shape="circle" id="eight" onClick={() => this.props.insertAction(8)}>8</Button>
         <Button shape="circle" id="nine" onClick={() => this.props.insertAction(9)}>9</Button>
-        <Button shape="circle" id="" onClick={() => this.props.insertAction('.')}>.</Button>
+        <Button shape="circle" id="decimal" onClick={() => this.props.insertAction('.')}>.</Button>
         </Col>
         <Col span={6}>
         <Button shape="circle" id="add" onClick={() => this.props.operatorAction('+')}>+</Button>
@@ -33,7 +33,7 @@ class Calc extends React.Component {
         <Button shape="circle" id="multiply" onClick={() => this.props.operatorAction('*')}>*</Button>
         <Button shape="circle" id="divide" onClick={() => this.props.operatorAction('/')}>/</Button>
         <Button shape="circle" id="equals" onClick={() => this.props.calcAction()}>=</Button>
-        <Button shape="circle" id="equals" onClick={() => this.props.clearAction()}>AC</Button>
+        <Button shape="circle" id="clear" onClick={() => this.props.clearAction()}>AC</Button>
         </Col>
        </Row>
        </div>

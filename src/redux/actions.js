@@ -1,9 +1,5 @@
 export const INSERT = 'INSERT';
 export const OPERATOR = 'OPERATOR';
-export const ADD = 'ADD';
-export const SUBTRACT = 'SUBTRACT';
-export const MULTIPLY = 'MULTIPLY';
-export const DIVIDE = 'DIVIDE';
 export const CLEAR = 'CLEAR';
 export const CALC = 'CALC';
 
@@ -21,27 +17,6 @@ export const operatorAction = (data) => {
         payload: data
     }
 }
-
-// export const subtractAction = (data) => {
-//     return {
-//         type: SUBTRACT,
-//         payload: data
-//     }
-// }
-
-// export const multiplyAction = (data) => {
-//     return {
-//         type: MULTIPLY,
-//         payload: data
-//     }
-// }
-
-// export const divideAction = (data) => {
-//     return {
-//         type: DIVIDE,
-//         payload: data
-//     }
-// }
 
 export const clearAction = (data) => {
     return {

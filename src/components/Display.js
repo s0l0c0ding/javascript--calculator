@@ -1,6 +1,7 @@
 export default function Display (props) {
     console.log(props);
     return(
+        <div id='display'>
         <h1>   
             {
             props.display.reduce((acc,cur) => {
@@ -8,5 +9,6 @@ export default function Display (props) {
             },'')
             }
         </h1>
+        </div>
     );
 }
