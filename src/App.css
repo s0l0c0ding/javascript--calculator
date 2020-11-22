@@ -1,1 +1,13 @@
 @import '~antd/dist/antd.css';
+
+.display-text {
+    font-size: medium;
+    font-style: oblique;
+}
+
+.App {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+  }

@@ -1,14 +1,15 @@
+import { Typography } from 'antd';
+const { Text } = Typography;
+
 export default function Display (props) {
     console.log(props);
     return(
-        <div id='display'>
-        <h1>   
+        <Text id='display' type="success" strong className="display-text">
             {
             props.display.reduce((acc,cur) => {
                 return acc +''+cur;
             },'')
             }
-        </h1>
-        </div>
+        </Text>
     );
 }
